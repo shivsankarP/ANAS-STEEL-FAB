@@ -64,10 +64,7 @@ const Hero = () => {
             <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-periwinkle/10 rounded-full blur-[100px]"></div>
 
             {/* Main Glassmorphism Card */}
-            <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
+            <div
                 className="relative z-10 w-full max-w-7xl min-h-[550px] lg:h-[75vh] glass rounded-[2.5rem] md:rounded-[3.5rem] border-[12px] border-white/40 shadow-2xl flex flex-col overflow-hidden"
             >
 
@@ -91,10 +88,7 @@ const Hero = () => {
 
                     {/* Headline & CTA Section */}
                     <div className="flex-1 flex flex-col justify-center pt-16 lg:pt-0 text-center lg:text-left">
-                        <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.5 }}
+                        <div
                         >
                             <h1 className="text-4xl md:text-6xl lg:text-[5rem] font-black text-white leading-[1.1] mb-6">
                                 Steel With <br />
@@ -121,7 +115,7 @@ const Hero = () => {
                                     Our Projects
                                 </a>
                             </div>
-                        </motion.div>
+                        </div>
                     </div>
 
                     {/* Right Carousel Section */}
@@ -157,7 +151,7 @@ const Hero = () => {
 
                 {/* Subtle Grid Pattern Overlay */}
                 <div className="absolute inset-0 pointer-events-none opacity-[0.05]" style={{ backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
-            </motion.div>
+            </div>
         </section>
     );
 };
