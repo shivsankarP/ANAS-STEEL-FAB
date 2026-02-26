@@ -34,12 +34,12 @@ const Loader = ({ onComplete, onRevealStart }) => {
 
         const revealTimer = setTimeout(() => {
             if (onRevealStart) onRevealStart();
-        }, 400);
+        }, 1200);
 
         const completeTimer = setTimeout(() => {
             setIsAnimating(false);
             if (onComplete) onComplete();
-        }, 800);
+        }, 2000);
 
         return () => {
             window.removeEventListener('resize', calculateTarget);
@@ -70,8 +70,8 @@ const Loader = ({ onComplete, onRevealStart }) => {
                                     y: [0, 0, targetPos.y]
                                 }}
                                 transition={{
-                                    duration: 0.8,
-                                    times: [0, 0.3, 1],
+                                    duration: 2.0,
+                                    times: [0, 0.6, 1],
                                     ease: [0.16, 1, 0.3, 1]
                                 }}
                                 className="relative z-20"
@@ -99,8 +99,8 @@ const Loader = ({ onComplete, onRevealStart }) => {
                                     y: [20, 0, 0, 0]
                                 }}
                                 transition={{
-                                    duration: 0.8,
-                                    times: [0, 0.2, 0.35, 0.45], // Fade in then out slightly after logo starts moving
+                                    duration: 2.0,
+                                    times: [0, 0.2, 0.6, 0.7], // Stays visible in center longer
                                     ease: "easeInOut"
                                 }}
                                 className="mt-8 text-3xl md:text-5xl font-black tracking-tighter text-white flex items-center gap-3 drop-shadow-xl"
