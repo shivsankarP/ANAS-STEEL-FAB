@@ -1,0 +1,30 @@
+.text-type-root {
+    display: inline-flex;
+    align-items: center;
+    white-space: pre-wrap;
+    min-height: 1.2em;
+    /* Prevents height jumping */
+    vertical-align: bottom;
+}
+
+.text-type-content {
+    display: inline-block;
+}
+
+.text-type-cursor {
+    display: inline-block;
+    margin-left: 2px;
+    animation: type-blink 1s step-end infinite;
+}
+
+@keyframes type-blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
