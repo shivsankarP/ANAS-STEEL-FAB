@@ -10,7 +10,6 @@ import Loader from './components/Loader';
 
 
 function App() {
-    const [isLoading, setIsLoading] = useState(true);
     const [isRevealed, setIsRevealed] = useState(false);
 
     return (
@@ -19,7 +18,6 @@ function App() {
                 {/* Loader handles its own logic and signals when to reveal content */}
                 <Loader
                     onRevealStart={() => setIsRevealed(true)}
-                    onComplete={() => setIsLoading(false)}
                 />
 
                 <motion.div
@@ -28,7 +26,7 @@ function App() {
                         opacity: isRevealed ? 1 : 0,
                     }}
                     transition={{
-                        duration: 2,
+                        duration: 0.3,
                         ease: "easeOut"
                     }}
                 >

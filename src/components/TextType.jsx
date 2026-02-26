@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import './TextType.css';
 
 /**
@@ -14,7 +14,7 @@ import './TextType.css';
  */
 const TextType = ({
     text,
-    as: Component = 'span',
+    as: Component = 'span', // eslint-disable-line no-unused-vars
     typingSpeed = 75,
     pauseDuration = 5000,
     deletingSpeed = 30,

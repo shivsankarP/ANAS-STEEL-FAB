@@ -34,12 +34,12 @@ const Loader = ({ onComplete, onRevealStart }) => {
 
         const revealTimer = setTimeout(() => {
             if (onRevealStart) onRevealStart();
-        }, 2200);
+        }, 400);
 
         const completeTimer = setTimeout(() => {
             setIsAnimating(false);
             if (onComplete) onComplete();
-        }, 3600);
+        }, 800);
 
         return () => {
             window.removeEventListener('resize', calculateTarget);
@@ -54,7 +54,7 @@ const Loader = ({ onComplete, onRevealStart }) => {
                 <motion.div
                     initial={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 1, ease: "circIn" }}
+                    transition={{ duration: 0.2, ease: "circIn" }}
                     className="fixed inset-0 z-[100] bg-[#0a0c10] flex items-center justify-center overflow-hidden"
                 >
                     {/* Animated Cinematic Logo */}
@@ -70,7 +70,7 @@ const Loader = ({ onComplete, onRevealStart }) => {
                                     y: [0, 0, targetPos.y]
                                 }}
                                 transition={{
-                                    duration: 3.2,
+                                    duration: 0.8,
                                     times: [0, 0.3, 1],
                                     ease: [0.16, 1, 0.3, 1]
                                 }}
@@ -99,7 +99,7 @@ const Loader = ({ onComplete, onRevealStart }) => {
                                     y: [20, 0, 0, 0]
                                 }}
                                 transition={{
-                                    duration: 3.2,
+                                    duration: 0.8,
                                     times: [0, 0.2, 0.35, 0.45], // Fade in then out slightly after logo starts moving
                                     ease: "easeInOut"
                                 }}

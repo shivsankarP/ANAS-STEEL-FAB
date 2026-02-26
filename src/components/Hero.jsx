@@ -25,10 +25,6 @@ const Hero = () => {
         setPopularIndex((prev) => (prev + 1) % POPULAR_ITEMS.length);
     }, []);
 
-    const prevPopular = useCallback(() => {
-        setPopularIndex((prev) => (prev - 1 + POPULAR_ITEMS.length) % POPULAR_ITEMS.length);
-    }, []);
-
     // 5-second automatic progression for the works carousel
     useEffect(() => {
         const interval = setInterval(nextPopular, 5000);
