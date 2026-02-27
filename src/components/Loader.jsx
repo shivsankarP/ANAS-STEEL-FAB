@@ -34,12 +34,12 @@ const Loader = ({ onComplete, onRevealStart }) => {
 
         const revealTimer = setTimeout(() => {
             if (onRevealStart) onRevealStart();
-        }, 1200);
+        }, 3000);
 
         const completeTimer = setTimeout(() => {
             setIsAnimating(false);
             if (onComplete) onComplete();
-        }, 2000);
+        }, 5000);
 
         return () => {
             window.removeEventListener('resize', calculateTarget);
@@ -70,8 +70,8 @@ const Loader = ({ onComplete, onRevealStart }) => {
                                     y: [0, 0, targetPos.y]
                                 }}
                                 transition={{
-                                    duration: 2.0,
-                                    times: [0, 0.6, 1],
+                                    duration: 5.0,
+                                    times: [0, 0.5, 1],
                                     ease: [0.16, 1, 0.3, 1]
                                 }}
                                 className="relative z-20"
@@ -99,11 +99,11 @@ const Loader = ({ onComplete, onRevealStart }) => {
                                     y: [20, 0, 0, 0]
                                 }}
                                 transition={{
-                                    duration: 2.0,
-                                    times: [0, 0.2, 0.6, 0.7], // Stays visible in center longer
+                                    duration: 5.0,
+                                    times: [0, 0.15, 0.55, 0.65],
                                     ease: "easeInOut"
                                 }}
-                                className="mt-8 text-3xl md:text-5xl font-black tracking-tighter text-white flex items-center gap-3 drop-shadow-xl"
+                                className="mt-8 text-lg md:text-5xl tracking-widest text-white flex items-center gap-3 drop-shadow-xl font-ethnocentric"
                             >
                                 <span>ANAS</span>
                                 <span className="text-periwinkle">STEEL</span>

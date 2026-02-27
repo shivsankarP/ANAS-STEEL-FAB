@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Services from '../components/Services';
 import Projects from '../components/Projects';
+import Clients from '../components/Clients';
 import Contact from '../components/Contact';
 
 const Home = () => {
@@ -37,6 +38,9 @@ const Home = () => {
             </div>
             <div className="reveal-on-scroll">
                 <Projects />
+            </div>
+            <div className="reveal-on-scroll">
+                <Clients />
             </div>
             <div className="reveal-on-scroll">
                 <Contact />

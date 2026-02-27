@@ -40,8 +40,18 @@ const Contact = () => {
                                     <FaPhone />
                                 </div>
                                 <div>
-                                    <p className="text-slate-400 text-sm">Call Us</p>
-                                    <p className="text-xl font-bold">+91 98765 43210</p>
+                                    <p className="text-slate-400 text-sm">Main Office</p>
+                                    <p className="text-xl font-bold">+91 97461 02236</p>
+                                </div>
+                            </div>
+
+                            <div className="flex items-center gap-6">
+                                <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-periwinkle text-xl border border-white/10">
+                                    <FaPhone />
+                                </div>
+                                <div>
+                                    <p className="text-slate-400 text-sm">Contact Person</p>
+                                    <p className="text-xl font-bold">+91 98464 02236</p>
                                 </div>
                             </div>
 
@@ -51,7 +61,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="text-slate-400 text-sm">Email Us</p>
-                                    <p className="text-xl font-bold">info@anasteel.in</p>
+                                    <p className="text-xl font-bold">anasfab23@gmail.com</p>
                                 </div>
                             </div>
 
@@ -61,16 +71,19 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="text-slate-400 text-sm">Visit Us</p>
-                                    <p className="text-xl font-bold">Industrial Estate, Kochi, Kerala</p>
+                                    <p className="text-xl font-bold">Chelembra, Malappuram, <br className="hidden sm:block" /> Kerala, 672634</p>
                                 </div>
                             </div>
 
                             <div className="flex gap-4 mt-12">
-                                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-bold transition-all">
-                                    <FaWhatsapp className="text-xl" /> Sales team
-                                </a>
-                                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-xl font-bold transition-all border border-white/10">
-                                    <FaWhatsapp className="text-xl text-green-500" /> 24 X 7 - customer support desk
+                                <a
+                                    href="https://wa.me/919746102236"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-green-900/40"
+                                >
+                                    <FaWhatsapp className="text-2xl" />
+                                    <span>Chat with us on WhatsApp</span>
                                 </a>
                             </div>
                         </div>
@@ -119,12 +132,12 @@ const Contact = () => {
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-center">
                             <FaMapMarkerAlt className="text-cobalt text-5xl mx-auto mb-4" />
-                            <p className="text-slate-400">Integrated Project Site Map Location</p>
-                            <p className="text-white font-bold">Kochi Industrial Park, Block 4</p>
+                            <p className="text-slate-400">Headquarters Location</p>
+                            <p className="text-white font-bold">Chelembra, Malappuram, Kerala</p>
                         </div>
                     </div>
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125745.7182!2d76.2239!3d9.9816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d514abec6bf%3A0xbd582ca0557bc2fa!2sKochi%2C%20Kerala!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31317.073403867605!2d75.87532395521443!3d11.140417983633633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba651918365697d%3A0x6a15bd7f0e75a907!2sChelembra%2C%20Kerala!5e0!3m2!1sen!2sin!4v1709148400000!5m2!1sen!2sin"
                         width="100%"
                         height="100%"
                         style={{ border: 0, opacity: 0.3 }}

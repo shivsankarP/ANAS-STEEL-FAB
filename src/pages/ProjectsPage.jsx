@@ -21,22 +21,13 @@ const ProjectsPage = () => {
                 </Link>
             </div>
 
-            <div className="container mx-auto px-6 mb-16 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div className="container mx-auto px-6 mb-16">
                 <div>
                     <h1 className="text-4xl md:text-6xl font-black text-navy mb-4">Complete Portfolio</h1>
                     <p className="text-slate-600 text-lg max-w-2xl">
                         Explore our full range of structural steel projects, from industrial warehouses to precision fabrication works across Kerala.
                     </p>
                 </div>
-                <a
-                    href="https://drive.google.com/drive/folders/1PbmVWcLMEw9iznII8P7thdwfjbWJiElp?usp=drive_link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-8 py-4 bg-navy text-white font-bold rounded-xl shadow-lg hover:bg-cobalt transition-all whitespace-nowrap"
-                >
-                    View in Drive
-                    <FiExternalLink />
-                </a>
             </div>
 
             <Projects />

@@ -72,16 +72,6 @@ const About = () => {
                                 </div>
                             </div>
 
-                            <motion.a
-                                href="https://drive.google.com/drive/folders/1PbmVWcLMEw9iznII8P7thdwfjbWJiElp?usp=drive_link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                whileHover={{ scale: 1.02 }}
-                                whileTap={{ scale: 0.98 }}
-                                className="inline-block px-8 py-4 bg-navy text-white font-bold rounded-xl shadow-lg hover:bg-cobalt transition-all"
-                            >
-                                Most Recent Works
-                            </motion.a>
                         </motion.div>
                     </div>
                 </div>

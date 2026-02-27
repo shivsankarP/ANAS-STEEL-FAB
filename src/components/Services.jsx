@@ -1,19 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { FaIndustry, FaProjectDiagram, FaHardHat, FaArchway } from 'react-icons/fa';
 
 const services = [
     {
-        title: 'Industrial Fabrication',
-        desc: 'High-quality steel fabrication for factories, warehouses, and industrial plants with precision engineering.',
+        title: 'Waste Management, Material Recovery & Recycling Plant',
+        desc: 'Comprehensive waste management solutions including material recovery and recycling plant design and fabrication with precision steel engineering.',
         icon: <FaIndustry />,
-        image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800'
+        image: '/services/waste.jpg'
     },
     {
-        title: 'Roofing Solutions',
-        desc: 'Advanced roofing and cladding systems for industrial, commercial, and residential structures using high-grade steel.',
+        title: 'Effluent Treatment Plant',
+        desc: 'Advanced effluent treatment plant structures and systems built with high-grade steel for industrial and commercial applications.',
         icon: <FaProjectDiagram />,
-        image: '/services/roofsolution.jpg'
+        image: '/services/ETP.jpg'
     },
     {
         title: 'Site Erection',
@@ -78,6 +79,29 @@ const Services = () => {
                         </motion.div>
                     ))}
                 </div>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.4 }}
+                    className="mt-14 flex flex-col items-center gap-4"
+                >
+                    <div className="flex flex-col md:flex-row items-center gap-6">
+                        <Link to="/recently-done">
+                            <motion.button
+                                whileHover={{ scale: 1.02 }}
+                                whileTap={{ scale: 0.98 }}
+                                className="inline-block px-8 py-4 bg-navy text-white font-bold rounded-xl shadow-lg hover:bg-cobalt transition-all"
+                            >
+                                Most Recent Works
+                            </motion.button>
+                        </Link>
+                        <span className="text-slate-500 font-semibold italic text-lg whitespace-nowrap">
+                            To Experience Our More Works
+                        </span>
+                    </div>
+                </motion.div>
             </div>
         </section>
     );
